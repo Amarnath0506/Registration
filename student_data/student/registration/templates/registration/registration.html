@@ -1,0 +1,31 @@
+<Html>
+   <head>
+      <title>
+         Registration Page
+      </title>
+   </head>
+   <body bgcolor=#ADD8E6>
+      <br>
+      <br>
+      <form method="post" action='/savedata/' id="register">
+          {% csrf_token %}
+         <div class="container">
+         <h1>STUDENT REGISTRATION</h1>
+         <label> Name </label>
+         <input type="text" name="name" size="15"/> <br> <br>
+             </div>
+         Email:
+         <input type="email" id="email" name="email"/> <br>
+         <br> <br>
+         <label>
+         Phone :
+         </label>
+         <input type="text" name="phone" size="10"/>
+         <br><br>
+         <label> Class: </label>
+         <input type="text" name="class" size="15"/> <br> <br>
+         <br> <br>
+         <button type="submit"form="register">Submit</button>
+      </form>
+   </body>
+</html>

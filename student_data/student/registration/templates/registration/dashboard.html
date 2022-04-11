@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registrartion Status</title>
+</head>
+<body>
+
+    <h1>Student Registration Report</h1>
+    {% for stu in student %}
+        <h3>Student Registration Number: </h3>{{ stu.s_class }}
+        <h3>Student name: </h3>{{ stu.name }}
+    {% endfor %}
+
+</body>
+</html>
